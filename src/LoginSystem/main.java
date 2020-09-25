@@ -17,7 +17,7 @@ public class main {
             System.out.println();
             switch (value) {
                 case 0 -> {
-                    break;
+                    System.out.println("Quiting..");
                 }
                 case 1 -> {
                     System.out.println("Log in");
