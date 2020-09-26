@@ -12,19 +12,19 @@ public class main {
         System.out.print("Waiting for your input: ");
 
         Scanner console = new Scanner(System.in);
+        createAccount cA = new createAccount();
+        logIn login = new logIn();
         int value = console.nextInt();
         do {
             System.out.println();
             switch (value) {
-                case 0 -> {
-                    System.out.println("Quiting..");
-                }
+                case 0 -> System.out.println("Quiting..");
                 case 1 -> {
-                    System.out.println("Log in");
+                    login.login();
                     value = 0;
                 }
                 case 2 -> {
-                    System.out.println("Create an Account");
+                    cA.createAccount();
                     value = 0;
                 }
                 default -> {
